@@ -184,7 +184,7 @@ def generate_candidate_top(entity_embedding=None, data_ids="OpenEA", path="", to
     if os.path.exists(path + "mapping_mat.npy"):  # OpenEA的规定
         mapping = np.load(path + "mapping_mat.npy")
         kg1_data = np.matmul(kg1_data, mapping)
-        print("load mapping  succussuflly!")
+        #print("load mapping  succussuflly!")
     kg1_index = data_ids[:, 0].tolist()
     params_cp = falconn.LSHConstructionParameters()
     params_cp.dimension = entity_embedding.shape[1]
@@ -255,7 +255,7 @@ def generate_hits(entity_embedding=None, data_ids=None, path="", entity_file="en
         ent2id2, id2ent2, max_id = read_ent_id(path + "kg2_ent_ids")
         paths = path.split('/')
         test_path = "/".join([paths[1], paths[2], paths[3], "datasets", paths[7], paths[8], paths[9]])
-        print("test_path:", test_path)
+        #print("test_path:", test_path)
         test_ids = []
         maxx_id = 0
         with open('/' + test_path + r"/test_links", 'r', encoding='utf-8') as f:
@@ -278,9 +278,9 @@ def generate_hits(entity_embedding=None, data_ids=None, path="", entity_file="en
     Rvec = np.array([entity_embedding[e] for e in data_ids[:, 1]])
     if os.path.exists(path + "mapping_mat.npy"):
         mapping = np.load(path + "mapping_mat.npy")
-        print("mapping shape:", mapping.shape)
+        #print("mapping shape:", mapping.shape)
         Lvec = np.matmul(Lvec, mapping)
-        print("load mapping succussuflly!")
+        #print("load mapping succussuflly!")
     if metric == "inner":
         sim_mat = np.matmul(Lvec, Rvec.T)
     elif metric == "cosine" or metric == "cityblock":
@@ -365,16 +365,16 @@ def static_openea_mode(path="/home/kgbnu/Code/output/results/", fold="/721_5fold
 
 if __name__ == '__main__':
     models = ["MTransE", "AttrE", "MultiKE", "JAPE"]
-    thresholds = [0, 0.4, 3, 3000]
+    thresholds = [0, 0.4, math.sqrt(2), 10]
     top_ks = [1, 5, 10]
     thre = math.sqrt(2)
     metric = "euclidean"  # inner
     hits_metrics = ["cityblock", "inner", "euclidean"]
     data_name = ["/EN_FR_15K_V1"]
-    #static_openea_mode(model=models[0], hits=(1, 5, 10), metric=metric, data_name=data_name)
-    #print("\n")
+    static_openea_mode(model=models[0], hits=(1, 5, 10), metric=metric, data_name=data_name)
+
     for threshold in thresholds:
         static_openea_mode(model=models[2], threshold=threshold, metric=metric, data_name=data_name, normalize=True, number_of_tables=3000)
-    print("\n")
+
     static_openea_mode(model=models[0], top_k=top_ks[0], metric=metric, data_name=data_name)
 
