@@ -365,7 +365,7 @@ def static_openea_mode(path="/home/kgbnu/Code/output/results/", fold="/721_5fold
 
 if __name__ == '__main__':
     models = ["MTransE", "AttrE", "MultiKE", "JAPE"]
-    thresholds = [0, 0.4, math.sqrt(2), 10]
+    thresholds = [0, 0.4, math.sqrt(2), 2, 10]
     top_ks = [1, 5, 10]
     thre = math.sqrt(2)
     metric = "euclidean"  # inner
