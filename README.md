@@ -26,8 +26,7 @@ python
   
 
   说明：falconn本身计算的Metric只有```euclidean```(欧氏距离)和```inner```(向量内积)两种。如果想用Cosine相似度计算评价，则先通过```L2 Normalization```, 后采用```euclidean```，则余弦距离就和欧几里得距离，余弦相似度三者之间有如下关系：
-  $$Euc\_dis{{t}^{2}}\text{=}2\centerdot Cos\_dis\text{=}2\centerdot (1-Cos\_sim)$$
-  $$Cos\_sim=1-\frac{1}{2}Euc\_dis{{t}^{2}}$$
+ 
 
   
 
