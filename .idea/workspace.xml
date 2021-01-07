@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5788325d-6e4c-4d0f-9e49-d55b1ebf4cc6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lsh_falconn.py" beforeDir="false" afterPath="$PROJECT_DIR$/lsh_falconn.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,14 +15,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lsh_falconn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="326" column="72" selection-start-line="326" selection-start-column="63" selection-end-line="326" selection-end-column="72" />
+            <state relative-caret-position="9250">
+              <caret line="370" column="33" lean-forward="true" selection-start-line="370" selection-start-column="33" selection-end-line="370" selection-end-column="33" />
               <folding>
                 <element signature="e#78#96#0" expanded="true" />
-                <element signature="e#555#5483#0" />
-                <element signature="e#5772#10433#0" />
-                <element signature="e#10335#13446#0" />
-                <element signature="e#13886#15239#0" />
               </folding>
             </state>
           </provider>
@@ -204,15 +198,15 @@
       <updated>1609833119135</updated>
       <workItem from="1609833121099" duration="1914000" />
       <workItem from="1609835701029" duration="6772000" />
-      <workItem from="1609914652140" duration="37712000" />
+      <workItem from="1609914652140" duration="38460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46398000" />
+    <option name="totallyTimeSpent" value="47146000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1861" height="1216" extended-state="7" />
+    <frame x="-8" y="-8" width="1861" height="1216" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14936146" />
@@ -277,14 +271,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lsh_falconn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="326" column="72" selection-start-line="326" selection-start-column="63" selection-end-line="326" selection-end-column="72" />
+        <state relative-caret-position="9250">
+          <caret line="370" column="33" lean-forward="true" selection-start-line="370" selection-start-column="33" selection-end-line="370" selection-end-column="33" />
           <folding>
             <element signature="e#78#96#0" expanded="true" />
-            <element signature="e#555#5483#0" />
-            <element signature="e#5772#10433#0" />
-            <element signature="e#10335#13446#0" />
-            <element signature="e#13886#15239#0" />
           </folding>
         </state>
       </provider>
